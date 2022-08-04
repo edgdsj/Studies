@@ -12,5 +12,6 @@ int main (void){
         std::thread th_obj(sthread, i);
         th_obj.join();
     }
+    //Modfied
     return 0;
 }
