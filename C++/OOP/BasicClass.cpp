@@ -1,8 +1,3 @@
-/*Polymorphism
-    Multiple form to the same class
-    Overloading: The hability to write two function with the same name but with diferent parameters
-    Overriding: The hability to add new functionality or change functionality of a method from
-    tha base class in the derived class, the same method signature with diferent functionality*/
 class BasicClass{
     //Access Modfier: public means that every code that has a instance of one object of this class will be able to access 
     //any attribute or method declared inside this modifier. 
@@ -10,10 +5,11 @@ class BasicClass{
         //Atributes are variables that will describe and hold the state of this object
         int basePublicAttribute;;
         //Methods are functions reletaded to the object, those function can modify the state of the object.
+        //Those functions are not stored with the object. it only point to those functions.
         void basePublicMethod(void);
-
         //Constructors are especial methods that are called to initialize a object, it must be declared without a retun type.
         BasicClass();
+        //Destructors are especial methods called when the object is out of scope or whne use the method Delete()
         ~BasicClass();
     
     //Access Modfier: public means that every code that has a instance of one object of this class will not be able to access 
