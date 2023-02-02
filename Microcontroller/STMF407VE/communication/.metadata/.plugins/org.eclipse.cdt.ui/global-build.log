@@ -1,0 +1,463 @@
+10:26:27 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/MCP2515LIB/CANSPI.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/MCP2515LIB/CANSPI.d" -MT"Core/MCP2515LIB/CANSPI.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/MCP2515LIB/CANSPI.o"
+arm-none-eabi-gcc "../Core/MCP2515LIB/MCP2515.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/MCP2515LIB/MCP2515.d" -MT"Core/MCP2515LIB/MCP2515.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/MCP2515LIB/MCP2515.o"
+In file included from ../Core/MCP2515LIB/MCP2515.c:1:
+../Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+In file included from ../Core/MCP2515LIB/CANSPI.c:2:
+../Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  14288	     20	   1828	  16136	   3f08	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+10:26:41 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-size   F407_BASICCAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14288	     20	   1828	  16136	   3f08	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+10:27:04 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-size   F407_BASICCAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14288	     20	   1828	  16136	   3f08	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+10:29:50 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  14868	     20	   1828	  16716	   414c	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+10:40:41 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17672	    120	   1896	  19688	   4ce8	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+10:42:17 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17676	    120	   1896	  19692	   4cec	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+14:59:15 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17560	    120	   1896	  19576	   4c78	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:12:06 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17560	    120	   1896	  19576	   4c78	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:15:27 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17600	    120	   1896	  19616	   4ca0	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:17:37 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17648	    120	   1896	  19664	   4cd0	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:22:19 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17676	    120	   1896	  19692	   4cec	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:25:33 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  16976	    120	   1888	  18984	   4a28	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:25:51 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-size   F407_BASICCAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16976	    120	   1888	  18984	   4a28	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+15:26:58 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17040	    120	   1888	  19048	   4a68	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:27:15 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-size   F407_BASICCAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17040	    120	   1888	  19048	   4a68	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+15:31:41 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17040	    120	   1888	  19048	   4a68	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:35:22 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-size   F407_BASICCAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17040	    120	   1888	  19048	   4a68	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+15:35:31 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-size   F407_BASICCAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17040	    120	   1888	  19048	   4a68	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+15:39:49 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  16920	    120	   1888	  18928	   49f0	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:40:07 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-size   F407_BASICCAN.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16920	    120	   1888	  18928	   49f0	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+15:47:51 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  16920	    120	   1888	  18928	   49f0	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:49:08 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17000	    120	   1888	  19008	   4a40	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:50:57 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17056	    120	   1888	  19064	   4a78	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:52:39 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17064	    120	   1888	  19072	   4a80	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+15:56:33 **** Incremental Build of configuration Debug for project F407_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:22:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+arm-none-eabi-gcc -o "F407_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/F407_BASICCAN/STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F407_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F407_BASICCAN.elf
+ 
+arm-none-eabi-size   F407_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  F407_BASICCAN.elf  > "F407_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  17676	    120	   1896	  19692	   4cec	F407_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: F407_BASICCAN.list
+ 
+16:00:15 **** Build of configuration Debug for project L476_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:5:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:39:33: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |      HAL_UART_Transmit(&huart2, "Init OK\n\r", 10 , HAL_MAX_DELAY);
+      |                                 ^~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:450,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:2:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1674:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1674 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:65:2: error: 'status' undeclared (first use in this function)
+   65 |  status = 0;
+      |  ^~~~~~
+../Core/Src/main.c:65:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+16:01:04 **** Incremental Build of configuration Debug for project L476_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:5:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:39:33: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |      HAL_UART_Transmit(&huart2, "Init OK\n\r", 10 , HAL_MAX_DELAY);
+      |                                 ^~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:450,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:2:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1674:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1674 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "L476_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L476_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L476_BASICCAN.elf
+ 
+arm-none-eabi-size   L476_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  L476_BASICCAN.elf  > "L476_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  23028	    220	   1916	  25164	   624c	L476_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: L476_BASICCAN.list
+ 
+16:01:54 **** Incremental Build of configuration Debug for project L476_BASICCAN ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/Core/MCP2515LIB" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:5:
+/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/Core/MCP2515LIB/MCP2515.h:4: warning: ignoring '#pragma anon_unions ' [-Wunknown-pragmas]
+    4 | #pragma anon_unions
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:39:33: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   39 |      HAL_UART_Transmit(&huart2, "Init OK\n\r", 10 , HAL_MAX_DELAY);
+      |                                 ^~~~~~~~~~~~~
+      |                                 |
+      |                                 char *
+In file included from ../Core/Inc/stm32l4xx_hal_conf.h:450,
+                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:2:
+../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1674:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1674 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "L476_BASICCAN.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/temp/Documentos/Studies/Microcontroller/STMF407VE/communication/L476_BASICCAN/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L476_BASICCAN.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L476_BASICCAN.elf
+ 
+arm-none-eabi-size   L476_BASICCAN.elf 
+arm-none-eabi-objdump -h -S  L476_BASICCAN.elf  > "L476_BASICCAN.list"
+   text	   data	    bss	    dec	    hex	filename
+  22976	    220	   1916	  25112	   6218	L476_BASICCAN.elf
+Finished building: default.size.stdout
+ 
+Finished building: L476_BASICCAN.list
+ 
