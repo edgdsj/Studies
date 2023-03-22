@@ -1,0 +1,5 @@
+user = edmilson-junior
+pass = 123456
+
+WLAN = ROSANE
+PASS = 18051991
