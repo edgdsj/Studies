@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "HIDDevice",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"esp_system.h": "c"
+		}
+	}
+}
